@@ -1,0 +1,11 @@
+title: Melvin Blackhammar
+email: your-email@kth.se
+description: Electrical Engineering Student at KTH
+baseurl: ""
+url: "https://decollinoire.github.io"
+keep_files: ["assets/video"]
+
+exclude: 
+  - "Gemfile"
+  - "Gemfile.lock"
+  - "assets/video/video"

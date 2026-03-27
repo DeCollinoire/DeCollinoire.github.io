@@ -1,43 +1,10 @@
-
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Melvin Blackh</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-
-<body>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-    $.get("navbar.html", function(data){
-        $("#header").replaceWith(data);
-    });
-    </script>
-    <div id="header"></div>
-
-    <div id="overlay">
-        <h1>Hello, I am Melvin Blackhammar.</h1>
-        <p>
-            I am a student in electrical engineering at KTH. I am currently working with completing this website for your enjoyment. <br><br> Thank you for visiting!
-        </p>
-    </div>
-
-    <div id="video-container">
-        <video autoplay muted loop>
-                <source src="video2.mp4" type="video/mp4">
-        </video>
-    </div>
-
-     <!-- Add the sidebar -->
-     <div class="sidebar">
-        <ul>
-            <li><a href="https://www.facebook.com/"><img src="https://www.freepnglogos.com/uploads/logo-facebook-png/facebook-logo-facebook-symbol-meaning-history-and-evolution-3.png"; width="20px"; height="20px"></a></li>
-            <li><a href="https://www.linkedin.com/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/640px-LinkedIn_logo_initials.png"; width="20px"; height="20px"></a></li>
-        </ul>
-    </div>
-
-</body>
-</html>
+---
+layout: default
+title: About | Melvin Blackhammar
+---
+<div id="overlay">
+    <h1>Hello, I'm Melvin Blackhammar.</h1>
+    <p>
+        I'm a student in electrical engineering at KTH. My main interests are Robotics and Control.
+    </p>
+</div>
