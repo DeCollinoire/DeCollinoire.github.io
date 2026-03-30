@@ -12,16 +12,20 @@
     {% include navbar.html %}
 
     <main>
-        {{ content }}
+        <div id="overlay"> 
+            {{ content }}
+        </div>
     </main>
 
     {% include sidebar.html %}
 
-    <div id="video-container">
-        <video autoplay muted loop playsinline> 
-            <source src="{{ '/assets/video/video.mp4' | relative_url }}" type="video/mp4">
-        </video>
-    </div>
+    <!--
+        <div id="video-container">
+            <video autoplay muted loop playsinline> 
+                <source src="{{ '/assets/video/video.mp4' | relative_url }}" type="video/mp4">
+            </video>
+        </div>
+    -->
 
 </body>
 

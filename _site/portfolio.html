@@ -8,28 +8,49 @@
     <link rel="stylesheet" href="/assets/css/styles.css">
 </head>
 
+
 <body>
     <header id="header">
-    <a href="#" id="logo">Melvin Blackhammar</a>
+    <a href="/index.html" id="logo">Melvin Blackhammar</a>
     <nav>
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="blog.html">Blog</a></li>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/portfolio.html">Portfolio</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+            <li><a href="/blog.html">Blog</a></li>
         </ul>
     </nav>
 </header>
 
-    <main>
-        <div id="overlay">
-    <h1>Hello and welcome!</h1>
-    <p>I'm a student in electrical engineering at KTH...</p>
-</div>
+    <section class="hero-spacer">
+        <div class="hero-container">
+            <h1 class="terminal-text">loading portfolio...</h1>
+        </div>
+    </section>
+    
+    <div class="main-content-wrapper">
+        <div id="main-content">
+            <h1>Hello and welcome to my project page!</h1>
+This is what I am working on right now:
 
-    </main>
+<h1> First Order Optimization Methods for Machine Learning - Bachelor's Thesis (<i>Kanditatexamensarbete</i>) </h1>
+Supervised by Carlo Fischione, Prof. at KTH, and Seyedamirreza Kazemi, PhD.
 
+<h1> The Podcast Translator: From Voice to Voice </h1>
+An attempt at using a combination of transcription, translation and voice synthetization to retain as much as possible of the original content - in another language! I can finally listen to my favorite podcast while practicing french!
+
+
+        </div>
+    </div>
+        
+    <!--
+        <div id="video-container">
+            <video autoplay muted loop playsinline> 
+                <source src="/assets/video/matrix.mp4" type="video/mp4">
+            </video>
+        </div>
+    -->
     <aside class="sidebar">
     <ul>
         <!-- Facebook -->
@@ -49,18 +70,18 @@
         <!-- GitHub -->
         <li>
             <a href="https://github.com/DeCollinoire" target="_blank" rel="noopener">
-                <img src="assets\images\GitHub_Invertocat_Black.png" width="20" height="20" alt="GitHub">
+                <img src="\assets\images\GitHub_Invertocat_Black.png" width="20" height="20" alt="GitHub">
             </a>
         </li>
     </ul>
 </aside>
-
-    <div id="video-container">
-        <video autoplay muted loop playsinline> 
-            <source src="/assets/video/video.mp4" type="video/mp4">
-        </video>
+    <footer>
+    <div class="footer-content">
+        <p>© 2026 Melvin Blackhammar | <a href="mailto:melvin.blackh@gmail.com">Contact Me</a></p>
+        <p>Built with Jekyll</p>
     </div>
-
+</footer>
+    
 </body>
 
 </html>

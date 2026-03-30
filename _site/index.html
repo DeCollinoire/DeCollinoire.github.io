@@ -8,28 +8,44 @@
     <link rel="stylesheet" href="/assets/css/styles.css">
 </head>
 
+
 <body>
     <header id="header">
-    <a href="#" id="logo">Melvin Blackhammar</a>
+    <a href="/index.html" id="logo">Melvin Blackhammar</a>
     <nav>
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="blog.html">Blog</a></li>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/portfolio.html">Portfolio</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+            <li><a href="/blog.html">Blog</a></li>
         </ul>
     </nav>
 </header>
 
-    <main>
-        <div id="overlay">
-    <h1>Hello and welcome!</h1>
-    <p> I'm a student at the Royal Institute of Technology (KTH) in Sweden, currently doing my Bachelor in Electrical Engineering. </p>
-</div>
+    <section class="hero-spacer">
+        <div class="hero-container">
+            <h1 class="terminal-text">welcome. i am melvin blackhammar</h1>
+        </div>
+    </section>
+    
+    <div class="main-content-wrapper">
+        <div id="main-content">
+            <h1> Hello there!</h1>
+<p> Happy to have you here! I'm a 3rd year student at the Royal Institute of Technology (KTH), in Sweden. </p>
+<p> Currently, I'm doing my Bachelor as a part of becoming a <i>Civilingenjör</i> in Electrical Engineering. My thesis project investigates first order optimization methods, i.e. SGD and the variants Momentum, Nesterov and Adam. </p>
+<p> To see my projects in detail, go to <a class="simple-link" href="portfolio.html">Portfolio</a> in the menu above, or have a look at <a href="https://github.com/DeCollinoire?tab=repositories">decollinoire@github</a> ('decollinoire' ≈ 'Blackhammar'). </p>
 
-    </main>
-
+        </div>
+    </div>
+        
+    <!--
+        <div id="video-container">
+            <video autoplay muted loop playsinline> 
+                <source src="/assets/video/matrix.mp4" type="video/mp4">
+            </video>
+        </div>
+    -->
     <aside class="sidebar">
     <ul>
         <!-- Facebook -->
@@ -49,18 +65,18 @@
         <!-- GitHub -->
         <li>
             <a href="https://github.com/DeCollinoire" target="_blank" rel="noopener">
-                <img src="assets\images\GitHub_Invertocat_Black.png" width="20" height="20" alt="GitHub">
+                <img src="\assets\images\GitHub_Invertocat_Black.png" width="20" height="20" alt="GitHub">
             </a>
         </li>
     </ul>
 </aside>
-
-    <div id="video-container">
-        <video autoplay muted loop playsinline> 
-            <source src="/assets/video/video.mp4" type="video/mp4">
-        </video>
+    <footer>
+    <div class="footer-content">
+        <p>© 2026 Melvin Blackhammar | <a href="mailto:melvin.blackh@gmail.com">Contact Me</a></p>
+        <p>Built with Jekyll</p>
     </div>
-
+</footer>
+    
 </body>
 
 </html>

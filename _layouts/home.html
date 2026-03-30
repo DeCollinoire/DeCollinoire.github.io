@@ -8,21 +8,32 @@
     <link rel="stylesheet" href="/assets/css/styles.css">
 </head>
 
+
 <body>
     {% include navbar.html %}
 
-    <main>
-        {{ content }}
-    </main>
-
-    {% include sidebar.html %}
-
-    <div id="video-container">
-        <video autoplay muted loop playsinline> 
-            <source src="{{ '/assets/video/video.mp4' | relative_url }}" type="video/mp4">
-        </video>
+    <section class="hero-spacer">
+        <div class="hero-container">
+            <h1 class="terminal-text">{{ page.hero-spacer }}</h1>
+        </div>
+    </section>
+    
+    <div class="main-content-wrapper">
+        <div id="main-content">
+            {{ content }}
+        </div>
     </div>
-
+        
+    <!--
+        <div id="video-container">
+            <video autoplay muted loop playsinline> 
+                <source src="{{ '/assets/video/matrix.mp4' | relative_url }}" type="video/mp4">
+            </video>
+        </div>
+    -->
+    {% include sidebar.html %}
+    {% include footer.html %}
+    
 </body>
 
 </html>

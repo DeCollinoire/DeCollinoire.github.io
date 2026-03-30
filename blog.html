@@ -1,8 +1,16 @@
 ---
-layout: default
+layout: home
 title: Blog | Melvin Blackhammar
+hero-spacer: loading blog posts...
 ---
-<div id="overlay">
-    <h1>Oops!</h1>
-    <p>Under construction.</p>
-</div>
+<section class="blog-feed">
+  {% for post in site.posts %}
+    <article>
+      <h2><a class="simple-link" href="{{ post.url }}">{{ post.title }}</a></h2>
+      <p class="post-meta">{{ post.date | date_to_string }}</p>
+      <div class="excerpt">
+        {{ post.excerpt | strip_html | truncatewords: 30 }}
+      </div>
+    </article>
+  {% endfor %}
+</section>
